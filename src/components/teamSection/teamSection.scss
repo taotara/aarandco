@@ -1,0 +1,110 @@
+.team-section {
+  margin-top: 0px;
+
+  .container {
+    z-index: 1;
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    .row {
+      .subtitle {
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #085e99;
+        text-align: center;
+      }
+
+      .title {
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 46px;
+        font-weight: 700;
+        color: #1c2539;
+        text-align: center;
+        position: relative;
+
+        &::after {
+          content: '';
+          width: 130px;
+          height: 4px;
+          background-color: #085e99;
+          position: absolute;
+          top: 80px;
+          transform: translateX(-50%);
+          left: 50%;
+        }
+      }
+    }
+
+    .card-container {
+      margin-top: 50px;
+      margin: 15px 0;
+
+      .card-box {
+        .box {
+          position: relative;
+          width: 315px;
+          height: 310px;
+          padding: 23px;
+
+          img {
+            width: 99%;
+          }
+
+          .team-info {
+            width: 80%;
+            position: absolute;
+            background: white;
+            opacity: 0.7;
+            transform: translateX(-50%);
+            bottom: 30px;
+            left: 50%;
+            padding: 10px;
+            transition: 0.3s;
+
+            h3 {
+              font-size: 20px;
+              font-weight: 700;
+              text-align: center;
+              color: #1c2539;
+            }
+
+            h4 {
+              font-size: 16px;
+              font-weight: 500;
+              text-align: center;
+              color: #085e99;
+            }
+          }
+
+          &:hover {
+            .team-info {
+              opacity: 1;
+              background: #085e99;
+              width: 84%;
+
+              h3,
+              h4 {
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (hover: none) {
+  .team-info {
+    opacity: 1;
+    background: #085e99;
+    width: 84%;
+
+    h3,
+    h4 {
+      color: white;
+    }
+  }
+}

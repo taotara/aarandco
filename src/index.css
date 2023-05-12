@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&family=Red+Hat+Display:wght@500;600;700&display=swap');
+
+body {
+  margin: 0;
+  /* font-family: 'Nunito Sans', sans-serif; */
+  font-family: 'Red Hat Display', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

@@ -1,0 +1,132 @@
+footer {
+  background: #085e99;
+  z-index: -5;
+
+  .footer-top-contents {
+    display: flex;
+
+    .left {
+      flex: 1;
+      display: flex;
+      justify-content: end;
+      padding: 20px;
+
+      img {
+        margin-right: 40px;
+        width: 140px;
+      }
+    }
+
+    .right {
+      flex: 3;
+      border-bottom-left-radius: 30px;
+      position: relative;
+      z-index: 0;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(2, 189, 43, 0.91);
+        border-bottom-left-radius: 30px;
+      }
+
+      .growBigBox {
+        z-index: 5;
+        height: 100%;
+        width: 90%;
+
+        h3 {
+          z-index: 10;
+          font-size: 30px;
+          font-weight: 700;
+          color: white;
+        }
+
+        a {
+          z-index: 10;
+          font-size: 16px;
+          font-weight: 700;
+          text-decoration: none;
+          color: #085e99;
+          background: white;
+          padding: 15px 30px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .footer-bottom-contents {
+    display: flex;
+    .bottom-content {
+      .row {
+        margin-top: 30px;
+        border-bottom: #A4A4A4 solid 1px;
+        .card-box {
+          .box {
+            padding: 20px;
+
+            h3{
+              font-size: 22px;
+              font-weight: 600;
+              color: white;
+              position: relative;
+              margin-bottom: 30px;
+
+              &::after{
+                position: absolute;
+                content: '';
+                background: #02BD2B;
+                width: 38px;
+                height: 4px;
+                left: 0;
+                bottom: -7px;
+              }
+            }
+
+            p {
+              font-family: 'Nunito Sans', sans-serif;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24.55px;
+              color: white;
+            }
+
+            ul{
+              list-style-type: none;
+              margin-left: -20px;
+              
+              li{
+                line-height: 45px;
+                a{
+                  color: white;
+                  text-decoration: none;
+                }
+              }
+            }
+
+            p{
+              border-bottom: #A4A4A4 1px solid ;
+              padding-bottom: 5px;
+              display: flex;
+
+              &:last-child {
+                padding-bottom: none;
+              }
+
+              span{
+                display: inline-block;
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

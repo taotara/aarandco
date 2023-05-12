@@ -1,0 +1,13 @@
+.main-navbar{
+  background: white;
+
+  a.nav-link{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    color: #1C2539;
+
+    &:hover{
+      color: #02BD2B;
+    }
+  }
+}

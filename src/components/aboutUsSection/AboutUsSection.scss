@@ -1,0 +1,75 @@
+.about-us-section{
+  margin-top: 100px;
+
+  .about-image{
+    
+    .img-primary{
+      width: 85%;
+      height: 435px;
+      border-radius: 15px;
+      position: relative;
+      border: solid 3px #085E99;
+
+      .img-secondary{
+        width: 200px;
+        height: 250px;
+        border-radius: 15px;
+        position: absolute;
+        top: 35%;
+        right: -15%;
+        border: solid 3px #085E99;
+      }
+    }
+  }
+
+  .about-section-txt{
+    margin-top: 1px;
+
+    .subtitle{
+      font-family: 'Red Hat Display', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #085E99;
+    }
+    
+    .title{
+      font-family: 'Red Hat Display', sans-serif;
+      font-size: 46px;
+      font-weight: 700;
+      color: #1C2539;
+    }
+
+    p{
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: #5D666F;
+    }
+
+    .clients{
+      background: rgba(8, 94, 153, 0.15);
+      position: relatie;
+      height: fit-content;
+
+      &:before{
+        content: '';
+        position: absolute;
+        height: 25%;
+        width: 6px;
+        background: #085E99;
+        }
+
+        h3{
+          font-size: 20px;
+          font-weight: 700;
+          padding-left: 20px;
+          padding-top: 15px;
+        }
+
+        .client-list {
+          
+      }
+    }
+  }
+}

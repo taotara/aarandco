@@ -1,0 +1,20 @@
+.header-top {
+  background: #1c2539;
+
+  .top-content {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    color: white;
+    padding: 5px 0;
+
+    .icon {
+      font-size: 18px;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .header-top {
+    display: none;
+  }
+}
