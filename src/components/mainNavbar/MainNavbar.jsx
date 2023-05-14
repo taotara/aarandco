@@ -41,22 +41,30 @@ const MainNavbar = () => {
               <Nav.Link as={Link} to="/OurServices">
                 Our Services
               </Nav.Link>
-              {/* <NavDropdown
+              <NavDropdown
                 title="Our Services"
                 id="navbarScrollingDropdown"
                 show={show}
                 onMouseEnter={showDropdown}
                 onMouseLeave={hideDropdown}
               >
-                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  Another action
+                <NavDropdown.Item as={Link} to="/services/audit and accounting">
+                  Audit And Accounting
                 </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Something else here
+                <NavDropdown.Item as={Link} to="/tax planing and compliance">
+                  Tax Planing And Compliance
                 </NavDropdown.Item>
-              </NavDropdown> */}
+                <NavDropdown.Item />
+                <NavDropdown.Item as={Link} to="/company secretarial">
+                  Company Secretarial
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/human resources">
+                  Human Resources
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/financial advisory">
+                  Financial Advisory
+                </NavDropdown.Item>
+              </NavDropdown>
               <Nav.Link as={Link} to="/AboutUs">
                 About Us
               </Nav.Link>

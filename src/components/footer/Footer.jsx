@@ -5,6 +5,9 @@ import FooterBg from '../../assets/footer_bg.jpg';
 import PhoneIcon from '@mui/icons-material/Phone';
 import MailIcon from '@mui/icons-material/Mail';
 import RoomIcon from '@mui/icons-material/Room';
+import FacebookRoundedIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 function Footer() {
   return (
@@ -112,32 +115,18 @@ function Footer() {
             </div>
           </div>
           <div className="row copyright-box">
-            2023 Abioye Abdulrazaq & co, All Rights Reserved
-          </div>
-        </div>
-      </div>
-
-      {/* <div className="container fluid footer-top">
-        <div className="row d-flex justify-content-between">
-          <div className="col-md-3 d-flex justify-content-end m-0">
-            <img src={FooterLogo} alt="" />
-          </div>
-          <div
-            className="col-md-9 growBig"
-            style={{
-              backgroundImage: `url(${FooterBg})`,
-              backgroundPosition: 'center right',
-              backgroundSize: 'cover',
-              backgroundRepeat: 'no-repeat',
-            }}
-          >
-            <div className="growBigBox d-flex">
-              <h3>Grow Big with best consultation </h3>
-              <a href="#">Get Appointment</a>
+            <div className="copyright">
+              <p>2023 Abioye Abdulrazaq & co, All Rights Reserved</p>
+            </div>
+            
+            <div className="socials">
+              <FacebookRoundedIcon className='icon' />
+              <TwitterIcon className='icon' />
+              <LinkedInIcon className='icon' />
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </footer>
   );
 }

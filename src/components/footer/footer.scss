@@ -66,22 +66,22 @@ footer {
     .bottom-content {
       .row {
         margin-top: 30px;
-        border-bottom: #A4A4A4 solid 1px;
+        border-bottom: #a4a4a4 solid 1px;
         .card-box {
           .box {
             padding: 20px;
 
-            h3{
+            h3 {
               font-size: 22px;
               font-weight: 600;
               color: white;
               position: relative;
               margin-bottom: 30px;
 
-              &::after{
+              &::after {
                 position: absolute;
                 content: '';
-                background: #02BD2B;
+                background: #02bd2b;
                 width: 38px;
                 height: 4px;
                 left: 0;
@@ -97,21 +97,21 @@ footer {
               color: white;
             }
 
-            ul{
+            ul {
               list-style-type: none;
               margin-left: -20px;
-              
-              li{
+
+              li {
                 line-height: 45px;
-                a{
+                a {
                   color: white;
                   text-decoration: none;
                 }
               }
             }
 
-            p{
-              border-bottom: #A4A4A4 1px solid ;
+            p {
+              border-bottom: #a4a4a4 1px solid;
               padding-bottom: 5px;
               display: flex;
 
@@ -119,12 +119,40 @@ footer {
                 padding-bottom: none;
               }
 
-              span{
+              span {
                 display: inline-block;
                 margin-right: 5px;
               }
             }
           }
+        }
+      }
+
+      .copyright-box {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        // background: white;
+
+        .copyright{
+          // background-color: red;
+          p {
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: white;
+          }
+        }
+
+        .socials{
+          // background: pink;
+           .icon{
+            color: white;
+            // background: rgba(255, 255, 255, 0.356);
+            margin-right: 15px;
+            // padding: 2px;
+            // border-radius: 50%;
+           }
         }
       }
     }

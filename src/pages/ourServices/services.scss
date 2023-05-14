@@ -1,0 +1,17 @@
+.audit-accountng {
+  .services-container{
+
+    .services-layout{
+      display: flex;
+      flex-direction: row;
+
+      nav {
+        flex: 4;
+      }
+
+      main {
+        flex: 8;
+      }
+    }
+  }
+}
