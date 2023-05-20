@@ -1,14 +1,14 @@
 import React from 'react';
-import './servicesTitle.scss';
+import './pageTitle.scss';
 import ServicesHead from '../../assets/services_bg.jpg';
 import Breadcrums from '../breadcrumbs/Breadcrums';
 
-function ServicesTitle({ pageTitle }) {
+function PageTitle({ pageTitle, pageTitleBg }) {
   return (
     <div
       className="services-title"
       style={{
-        backgroundImage: `url(${ServicesHead})`,
+        backgroundImage: `url(${require('../../assets/services_bg.jpg')})`,
         backgroundPosition: 'center right',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
@@ -28,4 +28,4 @@ function ServicesTitle({ pageTitle }) {
   );
 }
 
-export default ServicesTitle;
+export default PageTitle;

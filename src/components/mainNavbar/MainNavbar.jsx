@@ -38,12 +38,9 @@ const MainNavbar = () => {
               <Nav.Link as={Link} to="/">
                 Home
               </Nav.Link>
-              <Nav.Link as={Link} to="/OurServices">
-                Our Services
-              </Nav.Link>
               <NavDropdown
                 title="Our Services"
-                id="navbarScrollingDropdown"
+                id="services"
                 show={show}
                 onMouseEnter={showDropdown}
                 onMouseLeave={hideDropdown}
@@ -51,23 +48,47 @@ const MainNavbar = () => {
                 <NavDropdown.Item as={Link} to="/services/audit and accounting">
                   Audit And Accounting
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/tax planing and compliance">
+                <NavDropdown.Item
+                  as={Link}
+                  to="/services/tax planing and compliance"
+                >
                   Tax Planing And Compliance
                 </NavDropdown.Item>
                 <NavDropdown.Item />
-                <NavDropdown.Item as={Link} to="/company secretarial">
+                <NavDropdown.Item as={Link} to="/services/company secretarial">
                   Company Secretarial
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/human resources">
+                <NavDropdown.Item as={Link} to="/services/human resources">
                   Human Resources
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/financial advisory">
+                <NavDropdown.Item as={Link} to="/services/financial advisory">
                   Financial Advisory
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link as={Link} to="/AboutUs">
                 About Us
               </Nav.Link>
+              <NavDropdown
+                title="About Us"
+                id="aboutUs"
+                show={show}
+                onMouseEnter={showDropdown}
+                onMouseLeave={hideDropdown}
+              >
+                <NavDropdown.Item as={Link} to="/services/audit and accounting">
+                  The Company
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/services/tax planing and compliance"
+                >
+                  Our Creed
+                </NavDropdown.Item>
+                <NavDropdown.Item />
+                <NavDropdown.Item as={Link} to="/services/company secretarial">
+                  Our Team
+                </NavDropdown.Item>
+              </NavDropdown>
               <Nav.Link as={Link} to="/Clientele">
                 Clientele
               </Nav.Link>

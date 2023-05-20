@@ -23,21 +23,19 @@ import { useState } from 'react';
 import Footer from './components/footer/Footer';
 
 function App() {
-  const [pageTitle, setPageTitle] = useState('Default Page Title');
+  // const [pageTitle, setPageTitle] = useState('Default Page Title');
 
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<Root />}>
         <Route index element={<Home />} />
         <Route path="/ourservices" element={<OurServices />} />
+        
         <Route path="/services/audit and accounting" element={<AuditAndAccounting />} />
-        <Route
-          path="/tax planing and compliance"
-          element={<TaxPlaningAndCompliance />}
-        />
-        <Route path="/company secretarial" element={<CompanySecretarial />} />
-        <Route path="/human resources" element={<HumanResources />} />
-        <Route path="/financial advisory" element={<FinancialAdvisory />} />
+        <Route path="/services/tax planing and compliance" element={<TaxPlaningAndCompliance />} />
+        <Route path="/services/company secretarial" element={<CompanySecretarial />} />
+        <Route path="/services/human resources" element={<HumanResources />} />
+        <Route path="/services/financial advisory" element={<FinancialAdvisory />} />
 
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/clientele" element={<Clientele />} />

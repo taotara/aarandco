@@ -1,15 +1,17 @@
 import React from 'react';
 import ServicesMenu from '../../components/servicesMenu/ServicesMenu';
-import ServicesTitle from '../../components/servicesTitle/ServicesTitle';
+import PageTitle from '../../components/pageTitle/PageTitle';
 import { useState } from 'react';
 import './services.scss';
+import ImagePic from '../../assets/auditMain.jpg';
+import ImagePic2 from '../../assets/auditMain2.jpg';
 
 function AuditAndAccounting() {
   const [pageTitle, setPageTitle] = useState('Audit And Accounting');
 
   return (
-    <div className="audit-accountng">
-      <ServicesTitle pageTitle={pageTitle} />
+    <div className="services">
+      <PageTitle pageTitle={pageTitle} />
       <div className="container services-container">
         <div className="row services-layout">
           <div className="services-layout">
@@ -17,7 +19,6 @@ function AuditAndAccounting() {
               <ServicesMenu />
             </nav>
             <main>
-              <h2 className="title">Audit & Accounting</h2>
               <div className="details">
                 <p>
                   Naturally, our mainstay is STATUTORY AUDIT. Statutory Audit is
@@ -30,6 +31,14 @@ function AuditAndAccounting() {
                   function of the Auditor thereby overshadowing his main duties
                   entirely.
                 </p>
+                <div className="row">
+                  <div className="col-md-6 image-rep">
+                    <img src={ImagePic} alt="Audit and Accounting" />
+                  </div>
+                  <div className="col-md-6 image-rep">
+                    <img src={ImagePic2} alt="Audit and Accounting" />
+                  </div>
+                </div>
                 <p>
                   Although of great importance, the detection of fraud and
                   errors must be regarded as incidental to such main duties. We
@@ -37,7 +46,14 @@ function AuditAndAccounting() {
                   guidelines of the International Standards on Auditing &
                   International Financial Reporting Standard (IFRS) guidelines
                   issued from time to time as deemed fit by the International
-                  Accounting Standards Board(IASB).
+                  Accounting Standards Board (
+                  <abbr
+                    title="International
+                  Accounting Standards Board"
+                  >
+                    IASB
+                  </abbr>
+                  ).
                 </p>
                 <p>
                   We work much more efficiently when clients supply us with all
@@ -55,6 +71,30 @@ function AuditAndAccounting() {
                   in-house audit template for smarter and efficient handling of
                   all our audit engagements.
                 </p>
+
+                <h5>
+                  Other Specialised Audits offered by our firm are as follows:
+                </h5>
+                <ul>
+                  <li>Management Review Audit</li>
+                  <li>Stock Audit</li>
+                  <li>Staff Audit</li>
+                  <li>Financial Due Diligence</li>
+                  <li>Fraud And Forensic Investigation, Etc.</li>
+                </ul>
+
+                <h5>The Accountacy Services we offer include:</h5>
+
+                <ul>
+                  <li>Excess Bank Charges Recovery</li>
+                  <li>Accounting Books Write-Up</li>
+                  <li>Cash Flow And Budget Projections</li>
+                  <li>Accounting Manual</li>
+                  <li>Inventory Control Manual</li>
+                  <li>Accounting System Automation</li>
+                  <li>Recording And Posting Of Financial Transactions.</li>
+                  <li>Preparation Of Final Accounts, Etc.</li>
+                </ul>
               </div>
             </main>
           </div>
