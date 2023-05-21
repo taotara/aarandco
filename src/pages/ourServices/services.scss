@@ -1,7 +1,6 @@
 .services {
-  .services-container{
-
-    .services-layout{
+  .services-container {
+    .services-layout {
       display: flex;
       flex-direction: row;
       margin-top: 20px;
@@ -15,38 +14,41 @@
         margin-left: 20px;
         margin-bottom: 50px;
 
-        .title{
+        .title {
           font-size: 40px;
           font-weight: 700;
-          color: #1C2539;
+          color: #1c2539;
         }
 
-        .image-rep{
-          // width: 100%;
+        .image-rep {
+          img {
+            width: 100%;
+          }
         }
 
-        p{
+        p {
           font-family: 'Nunito Sans', sans-serif;
           font-size: 18px;
           font-weight: 400;
-          color: #5D666F;
+          color: #5d666f;
           line-height: 28px;
+          text-align: justify;
         }
 
-        h5{
+        h5 {
           font-size: 18px;
           font-weight: 600;
-          color: #1C2539;
+          color: #1c2539;
           margin-top: 50px;
           margin-bottom: 20px;
         }
 
-        ul{
+        ul {
           font-family: 'Nunito Sans', sans-serif;
           font-size: 18px;
           font-weight: 400;
-          color: #5D666F;
-          
+          color: #5d666f;
+          text-align: justify;
         }
       }
     }

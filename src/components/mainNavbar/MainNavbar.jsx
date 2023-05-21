@@ -75,17 +75,11 @@ const MainNavbar = () => {
                 onMouseEnter={showDropdown}
                 onMouseLeave={hideDropdown}
               >
-                <NavDropdown.Item as={Link} to="/services/audit and accounting">
+                <NavDropdown.Item as={Link} to="/aboutus/the company">
                   The Company
                 </NavDropdown.Item>
-                <NavDropdown.Item
-                  as={Link}
-                  to="/services/tax planing and compliance"
-                >
-                  Our Creed
-                </NavDropdown.Item>
                 <NavDropdown.Item />
-                <NavDropdown.Item as={Link} to="/services/company secretarial">
+                <NavDropdown.Item as={Link} to="/aboutus/our team">
                   Our Team
                 </NavDropdown.Item>
               </NavDropdown>

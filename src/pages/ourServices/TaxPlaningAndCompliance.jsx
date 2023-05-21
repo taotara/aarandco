@@ -3,6 +3,8 @@ import ServicesMenu from '../../components/servicesMenu/ServicesMenu';
 import PageTitle from '../../components/pageTitle/PageTitle';
 import { useState } from 'react';
 import './services.scss';
+import TaxPic1 from '../../assets/tax 2.jpg';
+import TaxPic2 from '../../assets/tax1.jpg';
 
 function TaxPlaningAndCompliance() {
   const [pageTitle, setPageTitle] = useState('Tax Planing And Compliance');
@@ -26,6 +28,14 @@ function TaxPlaningAndCompliance() {
                   Evasion) but rather by exploitingto your advantage, the
                   incentives in the tax Laws, to make your system tax-efficient.
                 </p>
+                <div className="row my-3">
+                  <div className="col-md-6 image-rep">
+                    <img src={TaxPic1} alt="Audit and Accounting" />
+                  </div>
+                  <div className="col-md-6 image-rep">
+                    <img src={TaxPic2} alt="Audit and Accounting" />
+                  </div>
+                </div>
                 <p>
                   Our service objective is to help our clients to succeed by
                   ensuring compliance with the various tax laws in the country.

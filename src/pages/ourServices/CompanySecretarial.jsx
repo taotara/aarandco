@@ -3,6 +3,8 @@ import ServicesMenu from '../../components/servicesMenu/ServicesMenu';
 import PageTitle from '../../components/pageTitle/PageTitle';
 import { useState } from 'react';
 import './services.scss';
+import Secretarial1 from '../../assets/Secretarial1.jpg';
+import Secretarial2 from '../../assets/Secretarial2.jpg';
 
 function CompanySecretarial() {
   const [pageTitle, setPageTitle] = useState('Company Secretarial');
@@ -28,7 +30,14 @@ function CompanySecretarial() {
                   and Chartered Accountants; all with long years of experience
                   in the field. We also act as Company Secretary.
                 </p>
-
+                <div className="row my-3">
+                  <div className="col-md-6 image-rep">
+                    <img src={Secretarial1} alt="Audit and Accounting" />
+                  </div>
+                  <div className="col-md-6 image-rep">
+                    <img src={Secretarial2} alt="Audit and Accounting" />
+                  </div>
+                </div>
                 <h5>
                   Our numerous Corporate Secretarial Services are highlighted
                   below:

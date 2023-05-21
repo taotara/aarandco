@@ -3,6 +3,8 @@ import ServicesMenu from '../../components/servicesMenu/ServicesMenu';
 import PageTitle from '../../components/pageTitle/PageTitle';
 import { useState } from 'react';
 import './services.scss';
+import Hr1 from '../../assets/hr.jpg';
+import Hr2 from '../../assets/hr2.jpg';
 
 function HumanResources() {
   const [pageTitle, setPageTitle] = useState('Human Resources');
@@ -26,6 +28,14 @@ function HumanResources() {
                   percent of their precious day engaged in these necessary but
                   time-sucking tasks.
                 </p>
+                <div className="row my-3">
+                  <div className="col-md-6 image-rep">
+                    <img src={Hr1} alt="Audit and Accounting" />
+                  </div>
+                  <div className="col-md-6 image-rep">
+                    <img src={Hr2} alt="Audit and Accounting" />
+                  </div>
+                </div>
                 <p>
                   The answer for many growing companies may be to outsource
                   their HR functions. We become the legal employer of your staff

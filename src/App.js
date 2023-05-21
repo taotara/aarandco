@@ -11,6 +11,8 @@ import HumanResources from './pages/ourServices/HumanResources';
 import FinancialAdvisory from './pages/ourServices/FinancialAdvisory';
 import Header from './components/header/Header';
 import MainNavbar from './components/mainNavbar/MainNavbar';
+import TheCompany from './pages/aboutUs/TheCompany';
+import OurTeam from './pages/aboutUs/OurTeam';
 import {
   BrowserRouter as Router,
   Route,
@@ -21,6 +23,7 @@ import {
 } from 'react-router-dom';
 import { useState } from 'react';
 import Footer from './components/footer/Footer';
+import Abioye from './pages/aboutUs/Abioye';
 
 function App() {
   // const [pageTitle, setPageTitle] = useState('Default Page Title');
@@ -38,6 +41,10 @@ function App() {
         <Route path="/services/financial advisory" element={<FinancialAdvisory />} />
 
         <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/aboutus/the company" element={<TheCompany />} />
+        <Route path="/aboutus/our team" element={<OurTeam />} />
+        <Route path="/aboutus/our team/abioye" element={<Abioye />} />
+        
         <Route path="/clientele" element={<Clientele />} />
         <Route path="/career" element={<Career />} />
         <Route path="/contactus" element={<ContactUs />} />

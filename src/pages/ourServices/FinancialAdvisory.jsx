@@ -3,6 +3,8 @@ import ServicesMenu from '../../components/servicesMenu/ServicesMenu';
 import PageTitle from '../../components/pageTitle/PageTitle';
 import { useState } from 'react';
 import './services.scss';
+import Fa1 from '../../assets/fa1.jpg';
+import Fa2 from '../../assets/fa2.jpg';
 
 function FinancialAdvisory() {
   const [pageTitle, setPageTitle] = useState('Financial Adversory');
@@ -26,6 +28,14 @@ function FinancialAdvisory() {
                   assist in turning around identified Weaknesses in order to
                   avert avoidable business challenges.
                 </p>
+                <div className="row my-3">
+                  <div className="col-md-6 image-rep">
+                    <img src={Fa1} alt="Audit and Accounting" />
+                  </div>
+                  <div className="col-md-6 image-rep">
+                    <img src={Fa2} alt="Audit and Accounting" />
+                  </div>
+                </div>
                 <p>
                   Our expertise is anchored on our extensive business knowledge
                   and compliance know-how. We focus on strategic, operational,

@@ -7,7 +7,7 @@ import ImagePic from '../../assets/auditMain.jpg';
 import ImagePic2 from '../../assets/auditMain2.jpg';
 
 function AuditAndAccounting() {
-  const [pageTitle, setPageTitle] = useState('Audit And Accounting');
+  const [pageTitle] = useState('Audit And Accounting');
 
   return (
     <div className="services">
@@ -31,7 +31,7 @@ function AuditAndAccounting() {
                   function of the Auditor thereby overshadowing his main duties
                   entirely.
                 </p>
-                <div className="row">
+                <div className="row my-3">
                   <div className="col-md-6 image-rep">
                     <img src={ImagePic} alt="Audit and Accounting" />
                   </div>
