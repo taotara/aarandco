@@ -24,6 +24,9 @@ import {
 import { useState } from 'react';
 import Footer from './components/footer/Footer';
 import Abioye from './pages/aboutUs/Abioye';
+import Akinwale from './pages/aboutUs/Akinwale';
+import Akinduntire from './pages/aboutUs/Akinduntire';
+import Durotoye from './pages/aboutUs/Durotoye';
 
 function App() {
   // const [pageTitle, setPageTitle] = useState('Default Page Title');
@@ -33,21 +36,36 @@ function App() {
       <Route path="/" element={<Root />}>
         <Route index element={<Home />} />
         <Route path="/ourservices" element={<OurServices />} />
-        
-        <Route path="/services/audit and accounting" element={<AuditAndAccounting />} />
-        <Route path="/services/tax planing and compliance" element={<TaxPlaningAndCompliance />} />
-        <Route path="/services/company secretarial" element={<CompanySecretarial />} />
+
+        <Route
+          path="/services/audit and accounting"
+          element={<AuditAndAccounting />}
+        />
+        <Route
+          path="/services/tax planing and compliance"
+          element={<TaxPlaningAndCompliance />}
+        />
+        <Route
+          path="/services/company secretarial"
+          element={<CompanySecretarial />}
+        />
         <Route path="/services/human resources" element={<HumanResources />} />
-        <Route path="/services/financial advisory" element={<FinancialAdvisory />} />
+        <Route
+          path="/services/financial advisory"
+          element={<FinancialAdvisory />}
+        />
 
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/aboutus/the company" element={<TheCompany />} />
         <Route path="/aboutus/our team" element={<OurTeam />} />
         <Route path="/aboutus/our team/abioye" element={<Abioye />} />
-        
+        <Route path="/aboutus/our team/akinwale" element={<Akinwale />} />
+        <Route path="/aboutus/our team/akinduntire" element={<Akinduntire />} />
+        <Route path="/aboutus/our team/durotoye" element={<Durotoye />} />
+
         <Route path="/clientele" element={<Clientele />} />
         <Route path="/career" element={<Career />} />
-        <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/contact us" element={<ContactUs />} />
       </Route>
     )
   );

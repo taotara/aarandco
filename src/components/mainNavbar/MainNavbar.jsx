@@ -65,9 +65,6 @@ const MainNavbar = () => {
                   Financial Advisory
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link as={Link} to="/AboutUs">
-                About Us
-              </Nav.Link>
               <NavDropdown
                 title="About Us"
                 id="aboutUs"
@@ -86,7 +83,10 @@ const MainNavbar = () => {
               <Nav.Link as={Link} to="/Clientele">
                 Clientele
               </Nav.Link>
-              <Nav.Link as={Link} to="/ContactUs">
+              <Nav.Link as={Link} to="/career">
+                Career
+              </Nav.Link>
+              <Nav.Link as={Link} to="/Contact Us">
                 Contact Us
               </Nav.Link>
             </Nav>

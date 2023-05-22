@@ -31,7 +31,7 @@ function OurTeam() {
           </div>
           <div className="col-md-6 col-lg-3 card-box">
             <div className="box">
-              <Link to={'/'}>
+              <Link to={'/aboutus/our team/akinwale'}>
                 <img src={Team2} alt="Avatar" />
               </Link>
               <div className="team-info">
@@ -42,7 +42,7 @@ function OurTeam() {
           </div>
           <div className="col-md-6 col-lg-3 card-box">
             <div className="box">
-              <Link to={'/'}>
+              <Link to={'/aboutus/our team/akinduntire'}>
                 <img src={Team3} alt="Avatar" />
               </Link>
               <div className="team-info">
@@ -53,7 +53,7 @@ function OurTeam() {
           </div>
           <div className="col-md-6 col-lg-3 card-box">
             <div className="box">
-              <Link to={'/'}>
+              <Link to={'/aboutus/our team/durotoye'}>
                 <img src={Team4} alt="Avatar" />
               </Link>
               <div className="team-info">

@@ -20,8 +20,21 @@
     display: none;
   }
 
+  a {
+    color: #085E99;
+    text-decoration: none;
+
+    &:hover {
+      color: #02BD2B;
+    }
+  }
+
   .crumb a {
     color: #085E99;
     text-decoration: none;
+
+    &:hover {
+      color: #02BD2B;
+    }
   }
 }

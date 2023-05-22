@@ -21,7 +21,7 @@ function Breadcrums() {
 
   return (
     <div className='breadcrums'>
-      {crumbs}
+      <Link to='/'>Home</Link> &gt; {crumbs}
     </div>
   )
 }
