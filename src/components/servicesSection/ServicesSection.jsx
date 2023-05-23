@@ -8,6 +8,7 @@ import Hr from '../../assets/Human Resources.png';
 import FinAd from '../../assets/Financial Advisory.png';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import OtherServicesBG from '../../assets/explore_services.jpg';
+import { Link } from 'react-router-dom';
 
 function ServicesSection() {
   return (
@@ -106,15 +107,15 @@ function ServicesSection() {
                 problems no matter how complex they may be. We usually achieve
                 this...
               </p>
-              <a href="#">
+              <Link to="/services/financial advisory">
                 <span>
                   <ArrowForwardIcon />
                 </span>
                 Read More
-              </a>
+              </Link>
             </div>
           </div>
-          <div className="col-md-6 col-lg-4 card-box">
+          {/* <div className="col-md-6 col-lg-4 card-box">
             <div
               className="box-extra"
               style={{
@@ -129,7 +130,7 @@ function ServicesSection() {
                 <a href="#">See All Services</a>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

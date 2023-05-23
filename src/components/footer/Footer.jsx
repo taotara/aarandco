@@ -12,12 +12,12 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 function Footer() {
   return (
     <footer>
-      <div className="d-flex footer-top-contents">
-        <div className="col-md-12 col-lg-6 left">
+      <div className="footer-top-contents">
+        <div className="left">
           <img src={FooterLogo} alt="Logo" />
         </div>
         <div
-          className="col-md-12 col-lg-6 right"
+          className="right"
           style={{
             backgroundImage: `url(${FooterBg})`,
             backgroundPosition: 'center right',
@@ -25,7 +25,7 @@ function Footer() {
             backgroundRepeat: 'no-repeat',
           }}
         >
-          <div className="growBigBox d-flex justify-content-around align-items-center">
+          <div className="growBigBox">
             <h3>Grow Big with best consultation </h3>
             <a href="#">Get Appointment</a>
           </div>
@@ -114,7 +114,7 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="row copyright-box">
+          <div className="copyright-box">
             <div className="copyright">
               <p>2023 Abioye Abdulrazaq & co, All Rights Reserved</p>
             </div>

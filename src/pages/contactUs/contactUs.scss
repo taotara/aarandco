@@ -3,7 +3,83 @@
     margin-top: 70px;
 
     .contact-info-box {
-      
+      .card {
+        position: relative;
+
+        .icon-block {
+          position: absolute;
+          width: 90px;
+          height: 90px;
+          background: white;
+          border-radius: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          top: 170px;
+          left: 50%;
+          transform: translateX(-50%);
+          box-shadow: 0 10px 20px rgba(137,151,186,.2);
+
+          .icon {
+            color: #085e99;
+            font-size: 41px;
+          }
+        }
+
+        &:hover {
+          border: 1px solid rgba(137,151,186,.1);
+          box-shadow: 0 10px 20px rgba(137,151,186,.2);
+        }
+      }
+    }
+
+    .message {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+
+      .form-container {
+        background: rgba(255, 255, 255, 0.781);
+        padding: 70px 30px;
+        margin: 100px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        
+        h2 {
+          font-size: 40px;
+          font-weight: 700;
+          color: #1c2539;
+        }
+
+        p {
+          font-family: 'Nunito Sans', sans-serif;
+          font-size: 18px;
+          font-weight: 400;
+          color: #5d666f;
+          line-height: 28px;
+          text-align: justify;
+        }
+
+        form {
+          font-family: 'Nunito Sans', sans-serif;
+          font-size: 18px;
+          font-weight: 400;
+          color: #5d666f;
+          padding-top: 30px;
+
+          .submit-btn {
+            background: #085E99;
+            font-family: 'Red Hat Display', sans-serif;
+            font-weight: 400;
+            border-radius: 5px;
+            padding: 10px 25px;
+          }
+        }
+      }
     }
   }
 }

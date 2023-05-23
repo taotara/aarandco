@@ -11,12 +11,14 @@ function Breadcrums() {
     .filter(crumb => crumb !== '')
     .map(crumb => {
       currentLink = +`/${crumb}`;
+
+  const frag = crumb.replace(/%20/g, ' ');
       
       return (
-        <div className='crumb' key={crumb}>
-          <Link to={currentLink}>{crumb}</Link>
+        <div className="crumb" key={crumb}>
+          <Link to={currentLink}>{frag}</Link>
         </div>
-      )
+      );
     })
 
   return (

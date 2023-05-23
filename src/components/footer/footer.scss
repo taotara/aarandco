@@ -38,6 +38,11 @@ footer {
         z-index: 5;
         height: 100%;
         width: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        // d-flex justify-content-around align-items-center
 
         h3 {
           z-index: 10;
@@ -111,7 +116,7 @@ footer {
             }
 
             p {
-              border-bottom: #a4a4a4 1px solid;
+              // border-bottom: #a4a4a4 1px solid;
               padding-bottom: 5px;
               display: flex;
 
@@ -132,10 +137,10 @@ footer {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        // background: white;
+        padding-top: 20px;
+        padding-bottom: 20px;
 
         .copyright{
-          // background-color: red;
           p {
             font-family: 'Nunito Sans', sans-serif;
             font-size: 14px;
@@ -145,7 +150,6 @@ footer {
         }
 
         .socials{
-          // background: pink;
            .icon{
             color: white;
             // background: rgba(255, 255, 255, 0.356);
@@ -155,6 +159,45 @@ footer {
            }
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+
+    .footer-top-contents {
+      flex-direction: column;
+  
+      .left {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+  
+      .right {
+        flex: 1;
+        
+        &::before {
+          border-bottom-left-radius: 0px;
+        }
+  
+        .growBigBox{
+          display: flex;
+          flex-direction: column;
+          padding: 20px;
+          
+          h3 {
+            text-align: center;
+          }
+        }
+      }
+      
+    }
+
+    .copyright-box {
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
