@@ -14,19 +14,17 @@ import MainNavbar from './components/mainNavbar/MainNavbar';
 import TheCompany from './pages/aboutUs/TheCompany';
 import OurTeam from './pages/aboutUs/OurTeam';
 import {
-  BrowserRouter as Router,
   Route,
-  Link,
   Outlet,
   createBrowserRouter,
   createRoutesFromElements, RouterProvider
 } from 'react-router-dom';
-import { useState } from 'react';
 import Footer from './components/footer/Footer';
 import Abioye from './pages/aboutUs/Abioye';
 import Akinwale from './pages/aboutUs/Akinwale';
 import Akinduntire from './pages/aboutUs/Akinduntire';
 import Durotoye from './pages/aboutUs/Durotoye';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   // const [pageTitle, setPageTitle] = useState('Default Page Title');
@@ -72,7 +70,6 @@ function App() {
   return (
     <div className="App">
       <RouterProvider router={router} />
-      
     </div>
   );
 }
@@ -80,6 +77,7 @@ function App() {
 const Root = () => {
   return (
     <>
+      <ScrollToTop />
       <Header />
       <MainNavbar />
       <div>

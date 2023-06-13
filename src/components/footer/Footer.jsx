@@ -8,6 +8,7 @@ import RoomIcon from '@mui/icons-material/Room';
 import FacebookRoundedIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -27,7 +28,7 @@ function Footer() {
         >
           <div className="growBigBox">
             <h3>Grow Big with best consultation </h3>
-            <a href="#">Get Appointment</a>
+            <Link to="/Contact Us">Get Appointment</Link>
           </div>
         </div>
       </div>
@@ -50,19 +51,19 @@ function Footer() {
                 <h3>Useful Links</h3>
                 <ul>
                   <li>
-                    <a href="#">Our Services</a>
+                    <Link to="/services">Our Services</Link>
                   </li>
                   <li>
-                    <a href="#">About Us</a>
+                    <Link to="/aboutus">About Us</Link>
                   </li>
                   <li>
-                    <a href="#">Clientele</a>
+                    <Link to="/Clientele">Clientele</Link>
                   </li>
                   <li>
-                    <a href="#">Career</a>
+                    <Link to="/career">Career</Link>
                   </li>
                   <li>
-                    <a href="#">Contact</a>
+                    <Link to="/Contact Us">Contact</Link>
                   </li>
                 </ul>
               </div>
@@ -72,19 +73,27 @@ function Footer() {
                 <h3>Services</h3>
                 <ul>
                   <li>
-                    <a href="#">Audit & Accounting</a>
+                    <Link to="/services/audit and accounting">
+                      Audit & Accounting
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">Tax Planning & Compliance</a>
+                    <Link to="/services/tax planing and compliance">
+                      Tax Planning & Compliance
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">Company Secretarial</a>
+                    <Link to="/services/company secretarial">
+                      Company Secretarial
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">Human Resources</a>
+                    <Link to="/services/human resources">Human Resources</Link>
                   </li>
                   <li>
-                    <a href="#">Financial Advisory</a>
+                    <Link to="/services/financial advisory">
+                      Financial Advisory
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -118,11 +127,11 @@ function Footer() {
             <div className="copyright">
               <p>2023 Abioye Abdulrazaq & co, All Rights Reserved</p>
             </div>
-            
+
             <div className="socials">
-              <FacebookRoundedIcon className='icon' />
-              <TwitterIcon className='icon' />
-              <LinkedInIcon className='icon' />
+              <FacebookRoundedIcon className="icon" />
+              <TwitterIcon className="icon" />
+              <LinkedInIcon className="icon" />
             </div>
           </div>
         </div>
