@@ -1,7 +1,7 @@
 .services-section {
   margin-top: 100px;
   position: relative;
-  z-index: -15;
+  z-index: 0;
 
   &::after {
     position: absolute;
@@ -55,11 +55,13 @@
       margin-top: 50px;
 
       .card-box {
+        
         .box {
           margin: 15px 0;
           background: white;
           padding: 23px;
           z-index: 8;
+          box-shadow: 0 10px 20px rgba(137,151,186,.5);
 
           h3 {
             font-weight: 700;
@@ -78,17 +80,18 @@
 
           a {
             font-family: 'Nunito Sans', sans-serif;
-            font-weight: 400;
+            font-weight: 600;
             font-size: 16px;
-            color: #1c2539;
+            color: #085e99;
             text-decoration: none;
             display: flex;
             align-items: center;
             cursor: pointer;
             z-index: 130;
+            width: fit-content;
 
             &:hover {
-              color: red;
+              color: #02bd2b;
             }
 
             span {

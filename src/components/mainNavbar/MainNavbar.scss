@@ -1,29 +1,26 @@
-.main-navbar{
+.main-navbar {
   background: white;
 
-  a.nav-link{
+  a.nav-link {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 600;
-    color: #1C2539;
+    color: #085e99;
 
-    &:hover{
-      color: #02BD2B;
+    &:hover {
+      color: #02bd2b;
     }
   }
-  
+
+  .dropdown {
+    .dropdown-menu {
+      display: none;
+      transition: 1s;
+    }
+
+    &:hover {
+      .dropdown-menu {
+      display: block;
+    }
+    }
+  }
 }
-
-
-// .dropdown-submenu {
-//   position: relative;
-// }
-
-// .dropdown-submenu .dropdown-menu {
-//   top: 10%;
-//   left: 100%;
-//   margin-top: -1px;
-// }
-
-// .navbar-nav li:hover > ul.dropdown-menu {
-//     display: block;
-// }

@@ -29,6 +29,14 @@
         &:hover {
           border: 1px solid rgba(137,151,186,.1);
           box-shadow: 0 10px 20px rgba(137,151,186,.2);
+
+          .icon-block  {
+            background: #085E99;
+          }
+
+          .icon {
+            color: #fff;
+          }
         }
       }
     }

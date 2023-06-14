@@ -37,12 +37,12 @@ function ServicesSection() {
                 organization as will enable the auditor to satisfy himself that
                 the...
               </p>
-              <a href="#">
+              <Link to="/services/audit and accounting">
                 <span>
                   <ArrowForwardIcon />
                 </span>
                 Read More
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-md-6 col-lg-4 card-box">
@@ -55,12 +55,12 @@ function ServicesSection() {
                 problems no matter how complex they may be. We usually achieve
                 this...
               </p>
-              <a href="#">
+              <Link to="/services/tax planing and compliance">
                 <span>
                   <ArrowForwardIcon />
                 </span>
                 Read More
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-md-6 col-lg-4 card-box">
@@ -72,12 +72,12 @@ function ServicesSection() {
                 Abdul-Razaq & Co. registered in May 2011 to carry out Company
                 Secretarial work. Our personnel for this service consist of a...
               </p>
-              <a href="#">
+              <Link to="/services/company secretarial">
                 <span>
                   <ArrowForwardIcon />
                 </span>
                 Read More
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-md-6 col-lg-4 card-box">
@@ -89,12 +89,12 @@ function ServicesSection() {
                 than they want or should on non-revenue-generating activities.
                 From payroll and human resource management to benefits...
               </p>
-              <a href="#">
+              <Link to="/services/human resources">
                 <span>
                   <ArrowForwardIcon />
                 </span>
                 Read More
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-md-6 col-lg-4 card-box">

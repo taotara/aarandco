@@ -43,7 +43,7 @@ function TheCompany() {
             <img src={Mission} alt="mission" />
           </div>
           <div className="col-md-8 right">
-            <h2 className="mt-3">OUR MISSION</h2>
+            <h2 className="mt-3">Our Mission</h2>
             <div className="quote">
               <FormatQuoteSharpIcon className="quote-open" />
               <p>
@@ -57,7 +57,7 @@ function TheCompany() {
         </div>
         <div className="row vision">
           <div className="col-md-8 left">
-            <h2 className="mt-3">OUR VISION</h2>
+            <h2 className="mt-3">Our Vision</h2>
             <div className="quote">
               <FormatQuoteSharpIcon className="quote-open" />
               <p>
@@ -78,7 +78,7 @@ function TheCompany() {
             <img src={Values} alt="values" />
           </div>
           <div className="col-md-8 right">
-            <h2 className="mt-3">OUR VALUES</h2>
+            <h2 className="mt-3">Our Values</h2>
             <div className="quote">
               <FormatQuoteSharpIcon className="quote-open" />
               <p>
@@ -96,7 +96,7 @@ function TheCompany() {
           </div>
         </div>
         <div className="row history">
-          <h2 className="title">OUR HISTORY & BACKGROUND INFORMATION</h2>
+          <h2 className="title">Our History & Background Information</h2>
           <p>
             The registered name of our firm is: ABIOYE ABDUL-RAZAQ & CO.. Our
             firm is an indigenous and multi-disciplinary outfit of chartered

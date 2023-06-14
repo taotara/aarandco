@@ -51,10 +51,10 @@ function Footer() {
                 <h3>Useful Links</h3>
                 <ul>
                   <li>
-                    <Link to="/services">Our Services</Link>
+                    <Link to="/ourservices">Our Services</Link>
                   </li>
                   <li>
-                    <Link to="/aboutus">About Us</Link>
+                    <Link to="/aboutus/the company">About Us</Link>
                   </li>
                   <li>
                     <Link to="/Clientele">Clientele</Link>
@@ -140,4 +140,4 @@ function Footer() {
   );
 }
 
-export default Footer
+export default Footer;
