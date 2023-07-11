@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './teamSection.scss';
 import Team1 from '../../assets/team1.jpg';
 import Team2 from '../../assets/team2.jpg';
 import Team3 from '../../assets/team3.jpg';
 import Team4 from '../../assets/team4.jpg';
 import { Link } from 'react-router-dom';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function TeamSection() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <div className="team-section">
       <div className="container">
@@ -14,7 +20,7 @@ function TeamSection() {
           <h3 className="subtitle">OUR TEAM</h3>
           <h2 className="title">Meet Our Team</h2>
         </div>
-        <div className="row card-container">
+        <div className="row card-container" data-aos="fade-down">
           <div className="col-md-6 col-lg-3 card-box">
             <div className="box">
               <Link to={'/aboutus/our team/abioye'}>

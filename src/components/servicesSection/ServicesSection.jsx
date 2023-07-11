@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './servicesSection.scss';
 import bG from '../../assets/services_bg.jpg';
 import AuditAcc from '../../assets/Audit & Accounting.png';
@@ -9,8 +9,13 @@ import FinAd from '../../assets/Financial Advisory.png';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import OtherServicesBG from '../../assets/explore_services.jpg';
 import { Link } from 'react-router-dom';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function ServicesSection() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <div
       className="services-section"
@@ -23,11 +28,15 @@ function ServicesSection() {
     >
       <div className="container">
         <div className="row">
-          <h3 className="subtitle">OUR SERVICES</h3>
-          <h2 className="title">Your success is our top priority</h2>
+          <h3 className="subtitle" data-aos="flip-left">
+            OUR SERVICES
+          </h3>
+          <h2 className="title" data-aos="flip-right">
+            Your success is our top priority
+          </h2>
         </div>
         <div className="row card-container">
-          <div className="col-md-6 col-lg-4 card-box">
+          <div className="col-md-6 col-lg-4 card-box" data-aos="zoom-in-up">
             <div className="box">
               <img src={AuditAcc} alt="" />
               <h3>Audit & Accounting</h3>
@@ -45,7 +54,7 @@ function ServicesSection() {
               </Link>
             </div>
           </div>
-          <div className="col-md-6 col-lg-4 card-box">
+          <div className="col-md-6 col-lg-4 card-box" data-aos="zoom-in-up">
             <div className="box">
               <img src={Tax} alt="" />
               <h3>Tax Planning & Compliance</h3>
@@ -63,7 +72,7 @@ function ServicesSection() {
               </Link>
             </div>
           </div>
-          <div className="col-md-6 col-lg-4 card-box">
+          <div className="col-md-6 col-lg-4 card-box" data-aos="zoom-in-up">
             <div className="box">
               <img src={ConmpSec} alt="" />
               <h3>Company Secretarial</h3>
@@ -80,7 +89,7 @@ function ServicesSection() {
               </Link>
             </div>
           </div>
-          <div className="col-md-6 col-lg-4 card-box">
+          <div className="col-md-6 col-lg-4 card-box" data-aos="zoom-in-up">
             <div className="box">
               <img src={Hr} alt="" />
               <h3>Human Resources</h3>
@@ -97,7 +106,7 @@ function ServicesSection() {
               </Link>
             </div>
           </div>
-          <div className="col-md-6 col-lg-4 card-box">
+          <div className="col-md-6 col-lg-4 card-box" data-aos="zoom-in-up">
             <div className="box">
               <img src={FinAd} alt="" />
               <h3>Financial Advisory</h3>

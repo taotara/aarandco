@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './AboutUsSection.scss';
 import PrimaryImg from '../../assets/about_us_section_primary.jpg';
 import SecondarImg from '../../assets/about_us_section_secondary.jpg';
-import Chevron from '../../assets/mdi_chevron-double-right.png'
+import Chevron from '../../assets/mdi_chevron-double-right.png';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function AboutUsSection() {
+  useEffect(() => {
+    Aos.init();
+  }, [])
   return (
     <div className="about-us-section">
       <div className="container">
@@ -18,6 +23,8 @@ function AboutUsSection() {
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
               }}
+              data-aos="fade-right"
+              data-aos-duration="500"
             >
               <div
                 className="img-secondary"
@@ -27,10 +34,14 @@ function AboutUsSection() {
                   backgroundSize: 'cover',
                   backgroundRepeat: 'no-repeat',
                 }}
+                data-aos="fade-left"
+                data-aos-delay="300"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
               ></div>
             </div>
           </div>
-          <div className="col-md-7 about-section-txt">
+          <div className="col-md-7 about-section-txt" data-aos="zoom-out-left">
             <h3 className="subtitle">ABOUT ABIOYE ABDUL-RAZAQ & CO</h3>
             <h2 className="title">
               Integrity, expertise, and excellence in all we do.
