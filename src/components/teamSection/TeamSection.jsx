@@ -20,7 +20,11 @@ function TeamSection() {
           <h3 className="subtitle">OUR TEAM</h3>
           <h2 className="title">Meet Our Team</h2>
         </div>
-        <div className="row card-container" data-aos="fade-down">
+        <div
+          className="row card-container"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
           <div className="col-md-6 col-lg-3 card-box">
             <div className="box">
               <Link to={'/aboutus/our team/abioye'}>
