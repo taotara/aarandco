@@ -7,7 +7,7 @@ import ConmpSec from '../../assets/Company Secretarial.png';
 import Hr from '../../assets/Human Resources.png';
 import FinAd from '../../assets/Financial Advisory.png';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import OtherServicesBG from '../../assets/explore_services.jpg';
+// import OtherServicesBG from '../../assets/explore_services.jpg';
 import { Link } from 'react-router-dom';
 import Aos from 'aos';
 import 'aos/dist/aos.css';

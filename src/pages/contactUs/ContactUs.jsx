@@ -1,6 +1,6 @@
 import React from 'react';
 import ContactTitle from '../../components/contactTitle/ContactTitle';
-import { useState, useRef } from 'react';
+import { useRef } from 'react';
 import Card from 'react-bootstrap/Card';
 import Mail from '../../assets/email.jpg';
 import Call from '../../assets/call.jpg';
@@ -16,7 +16,7 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 
 const ContactUs = () => {
-  const [pageTitle] = useState('Contact Us');
+  // const [pageTitle] = useState('Contact Us');
 
   const form = useRef();
 

@@ -50,15 +50,17 @@
 
     .clients{
       background: rgba(8, 94, 153, 0.15);
-      position: relatie;
-      height: fit-content;
+      position: relative;
+      padding: 20px 0;
 
       &:before{
         content: '';
         position: absolute;
-        height: 25%;
+        top: 0;
+        height: 100%;
         width: 6px;
         background: #085E99;
+        padding: 20px 0;
         }
 
         h3{
@@ -68,9 +70,13 @@
           padding-top: 15px;
         }
 
-        .client-list {
-          
-      }
+      //   .client-list {
+      //     ul {
+      //       display: flex;
+      //       flex-direction: column;
+      //       justify-content: center;
+      //     }
+      // }
     }
   }
 }
