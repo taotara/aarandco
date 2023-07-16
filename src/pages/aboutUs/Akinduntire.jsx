@@ -1,23 +1,33 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import AboutTitle from '../../components/aboutTitle/AboutTitle';
 import { useState } from 'react';
 import './aboutUs.scss';
 import AkinduntirePic from '../../assets/team3.jpg';
+import Aos from 'aos';
 
 function Akinduntire() {
   const [pageTitle] = useState('Akinduntire Atinuke');
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
 
   return (
     <div className="team-details">
       <AboutTitle pageTitle={pageTitle} />
       <div className="container details">
         <div className="row details-box">
-          <div className="col-md-4 left">
+          <div
+            className="col-md-4 left"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <img src={AkinduntirePic} alt="Abioye" />
             <h3>Akinduntire Atinuke</h3>
             <h5>Managers/Consultants</h5>
           </div>
-          <div className="col-md-8 right">
+          <div className="col-md-8 right" data-aos="fade-left">
             <h2>Experience</h2>
             <p>
               Atinuke is a prolific chartered accountant with immense practical

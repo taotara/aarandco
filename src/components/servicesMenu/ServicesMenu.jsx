@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import AuditAccounting from '../../assets/audit 2.svg';
 import { Link, NavLink } from 'react-router-dom';
 import Audit from '../../components/svg/Audit';
@@ -9,8 +9,13 @@ import FinancialAdvisory from '../../components/svg/FinancialAdvisory';
 import './servicesMenu.scss';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import PhoneSharpIcon from '@mui/icons-material/PhoneSharp';
+import Aos from 'aos';
 
 function ServicesMenu() {
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <nav className="service-menu">
       <div className="menu-item">
@@ -66,12 +71,13 @@ function ServicesMenu() {
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
         }}
+        data-aos="zoom-in-up"
       >
         <div className="consultation-message">
           <div className="consultation-inner">
             <div className="left">
               <div className="call-box">
-                <PhoneSharpIcon className='call' />
+                <PhoneSharpIcon className="call" />
               </div>
             </div>
             <div className="right">

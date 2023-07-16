@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import ServicesMenu from '../../components/servicesMenu/ServicesMenu';
 import PageTitle from '../../components/pageTitle/PageTitle';
 import { useState } from 'react';
 import './services.scss';
 import TaxPic1 from '../../assets/tax 2.jpg';
 import TaxPic2 from '../../assets/tax1.jpg';
+import Aos from 'aos';
 
 function TaxPlaningAndCompliance() {
   const [pageTitle, setPageTitle] = useState('Tax Planing And Compliance');
 
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <div className="services">
       <PageTitle pageTitle={pageTitle} />
@@ -30,10 +34,20 @@ function TaxPlaningAndCompliance() {
                 </p>
                 <div className="row my-3">
                   <div className="col-md-6 image-rep">
-                    <img src={TaxPic1} alt="Audit and Accounting" />
+                    <img
+                      src={TaxPic1}
+                      alt="Audit and Accounting"
+                      data-aos="fade-right"
+                      data-aos-duration="500"
+                    />
                   </div>
                   <div className="col-md-6 image-rep">
-                    <img src={TaxPic2} alt="Audit and Accounting" />
+                    <img
+                      src={TaxPic2}
+                      alt="Audit and Accounting"
+                      data-aos="fade-left"
+                      data-aos-duration="500"
+                    />
                   </div>
                 </div>
                 <p>

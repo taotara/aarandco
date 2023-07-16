@@ -1,25 +1,40 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import AboutTitle from '../../components/aboutTitle/AboutTitle';
 import './aboutUs.scss';
 import { useState } from 'react';
 import Mission from '../../assets/mission.jpg';
 import Vision from '../../assets/vision.jpg';
 import FormatQuoteSharpIcon from '@mui/icons-material/FormatQuoteSharp';
-import Values from '../../assets/values.jpg'
+import Values from '../../assets/values.jpg';
+import Aos from 'aos';
 
 function TheCompany() {
   const [pageTitle] = useState('The Company');
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
 
   return (
     <div className="about-us">
       <AboutTitle pageTitle={pageTitle} />
       <div className="container mt-5 pt-5">
         <div className="row">
-          <div className="col-md-4 welcome">
+          <div
+            className="col-md-4 welcome"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <h5 className="subtitle">About the company</h5>
             <h2 className="title">Welcome To Abioye Abdul-razaq & Co</h2>
           </div>
-          <div className="col-md-8 about-info">
+          <div
+            className="col-md-8 about-info"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <p>
               Our culture is significantly influenced by the heritage of the
               firm and, as such, we focus on building long-term client
@@ -40,7 +55,12 @@ function TheCompany() {
         </div>
         <div className="row mission">
           <div className="col-md-4 left">
-            <img src={Mission} alt="mission" />
+            <img
+              src={Mission}
+              alt="mission"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            />
           </div>
           <div className="col-md-8 right">
             <h2 className="mt-3">Our Mission</h2>
@@ -69,13 +89,23 @@ function TheCompany() {
             </div>
           </div>
           <div className="col-md-4 right">
-            <img src={Vision} alt="vision" />
+            <img
+              src={Vision}
+              alt="vision"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            />
           </div>
         </div>
 
         <div className="row values">
           <div className="col-md-4 left">
-            <img src={Values} alt="values" />
+            <img
+              src={Values}
+              alt="values"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            />
           </div>
           <div className="col-md-8 right">
             <h2 className="mt-3">Our Values</h2>

@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import ServicesMenu from '../../components/servicesMenu/ServicesMenu';
 import PageTitle from '../../components/pageTitle/PageTitle';
 import { useState } from 'react';
 import './services.scss';
 import Fa1 from '../../assets/fa1.jpg';
 import Fa2 from '../../assets/fa2.jpg';
+import Aos from 'aos';
 
 function FinancialAdvisory() {
   const [pageTitle, setPageTitle] = useState('Financial Adversory');
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
 
   return (
     <div className="services">
@@ -30,10 +35,20 @@ function FinancialAdvisory() {
                 </p>
                 <div className="row my-3">
                   <div className="col-md-6 image-rep">
-                    <img src={Fa1} alt="Audit and Accounting" />
+                    <img
+                      src={Fa1}
+                      alt="Audit and Accounting"
+                      data-aos="fade-right"
+                      data-aos-duration="500"
+                    />
                   </div>
                   <div className="col-md-6 image-rep">
-                    <img src={Fa2} alt="Audit and Accounting" />
+                    <img
+                      src={Fa2}
+                      alt="Audit and Accounting"
+                      data-aos="fade-left"
+                      data-aos-duration="500"
+                    />
                   </div>
                 </div>
                 <p>

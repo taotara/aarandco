@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import AboutTitle from '../../components/aboutTitle/AboutTitle';
 import { useState } from 'react';
 import './aboutUs.scss';
@@ -7,10 +7,14 @@ import Team2 from '../../assets/team2.jpg';
 import Team3 from '../../assets/team3.jpg';
 import Team4 from '../../assets/team4.jpg';
 import { Link } from 'react-router-dom';
-import Nav from 'react-bootstrap/Nav';
+import Aos from 'aos';
 
 function OurTeam() {
   const [pageTitle] = useState('Our Team');
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
 
   return (
     <div className="our-team">
@@ -19,7 +23,12 @@ function OurTeam() {
         {/* <h2 className="title">OUR MANAGEMENT TEAM</h2> */}
         <div className="row card-container">
           <div className="col-md-6 col-lg-3 card-box">
-            <div className="box">
+            <div
+              className="box"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
               <Link to={'/aboutus/our team/abioye'}>
                 <img src={Team1} alt="Avatar" />
               </Link>
@@ -30,7 +39,12 @@ function OurTeam() {
             </div>
           </div>
           <div className="col-md-6 col-lg-3 card-box">
-            <div className="box">
+            <div
+              className="box"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
               <Link to={'/aboutus/our team/akinwale'}>
                 <img src={Team2} alt="Avatar" />
               </Link>
@@ -41,7 +55,12 @@ function OurTeam() {
             </div>
           </div>
           <div className="col-md-6 col-lg-3 card-box">
-            <div className="box">
+            <div
+              className="box"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
               <Link to={'/aboutus/our team/akinduntire'}>
                 <img src={Team3} alt="Avatar" />
               </Link>
@@ -52,7 +71,12 @@ function OurTeam() {
             </div>
           </div>
           <div className="col-md-6 col-lg-3 card-box">
-            <div className="box">
+            <div
+              className="box"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
               <Link to={'/aboutus/our team/durotoye'}>
                 <img src={Team4} alt="Avatar" />
               </Link>

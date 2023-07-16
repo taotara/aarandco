@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ServicesMenu from '../../components/servicesMenu/ServicesMenu';
 import PageTitle from '../../components/pageTitle/PageTitle';
 import { useState } from 'react';
 import './services.scss';
 import ImagePic from '../../assets/auditMain.jpg';
 import ImagePic2 from '../../assets/auditMain2.jpg';
+import Aos from 'aos';
 
 function AuditAndAccounting() {
   const [pageTitle] = useState('Audit And Accounting');
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
 
   return (
     <div className="services">
@@ -31,12 +36,22 @@ function AuditAndAccounting() {
                   function of the Auditor thereby overshadowing his main duties
                   entirely.
                 </p>
-                <div className="row my-3">
+                <div className="row my-5">
                   <div className="col-md-6 image-rep">
-                    <img src={ImagePic} alt="Audit and Accounting" />
+                    <img
+                      src={ImagePic}
+                      alt="Audit and Accounting"
+                      data-aos="fade-right"
+                      data-aos-duration="500"
+                    />
                   </div>
                   <div className="col-md-6 image-rep">
-                    <img src={ImagePic2} alt="Audit and Accounting" />
+                    <img
+                      src={ImagePic2}
+                      alt="Audit and Accounting"
+                      data-aos="fade-left"
+                      data-aos-duration="500"
+                    />
                   </div>
                 </div>
                 <p>

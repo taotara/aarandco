@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import ServicesMenu from '../../components/servicesMenu/ServicesMenu';
 import PageTitle from '../../components/pageTitle/PageTitle';
 import { useState } from 'react';
 import './services.scss';
 import Hr1 from '../../assets/hr.jpg';
 import Hr2 from '../../assets/hr2.jpg';
+import Aos from 'aos';
 
 function HumanResources() {
   const [pageTitle, setPageTitle] = useState('Human Resources');
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
 
   return (
     <div className="services">
@@ -30,10 +35,20 @@ function HumanResources() {
                 </p>
                 <div className="row my-3">
                   <div className="col-md-6 image-rep">
-                    <img src={Hr1} alt="Audit and Accounting" />
+                    <img
+                      src={Hr1}
+                      alt="Audit and Accounting"
+                      data-aos="fade-right"
+                      data-aos-duration="500"
+                    />
                   </div>
                   <div className="col-md-6 image-rep">
-                    <img src={Hr2} alt="Audit and Accounting" />
+                    <img
+                      src={Hr2}
+                      alt="Audit and Accounting"
+                      data-aos="fade-left"
+                      data-aos-duration="500"
+                    />
                   </div>
                 </div>
                 <p>

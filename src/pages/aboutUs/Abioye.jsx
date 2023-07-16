@@ -1,23 +1,33 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import AboutTitle from '../../components/aboutTitle/AboutTitle';
 import { useState } from 'react';
 import './aboutUs.scss';
 import AbioyePic from '../../assets/team1.jpg';
+import Aos from 'aos';
 
 function Abioye() {
   const [pageTitle] = useState('A.O.S Abioye');
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
 
   return (
     <div className="team-details">
       <AboutTitle pageTitle={pageTitle} />
       <div className="container details">
         <div className="row details-box">
-          <div className="col-md-4 left">
+          <div
+            className="col-md-4 left"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <img src={AbioyePic} alt="Abioye" />
             <h3>Mr. A.O.S Abioye</h3>
             <h5>Managing Partner</h5>
           </div>
-          <div className="col-md-8 right">
+          <div className="col-md-8 right" data-aos="fade-left">
             <h2>Experience</h2>
             <p>
               Mr. A.O.S Abioye – A 1991 graduate of Accountancy from The
