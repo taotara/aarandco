@@ -105,13 +105,14 @@ function Footer() {
                   <span>
                     <PhoneIcon />
                   </span>
-                  08033333045, 08171281100
+                  <a href="tel:08033333045">08033333045</a>, &nbsp;
+                  <a href="tel:08171281100">08171281100</a>
                 </p>
                 <p>
                   <span>
                     <MailIcon />
                   </span>
-                  info@aarandco.com.ng
+                  <a href="mailto:info@aarandco.com.ng">info@aarandco.com.ng</a>
                 </p>
                 <p>
                   <span>

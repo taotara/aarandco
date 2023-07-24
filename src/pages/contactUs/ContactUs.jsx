@@ -45,7 +45,7 @@ const ContactUs = () => {
       <ContactTitle />
       <div className="container contact-container">
         <div className="row contact-info-box">
-          <div className="col-md-4">
+          <div className="col-md-4 mb-5">
             <Card className="h-100 card" style={{ width: '95%' }}>
               <Card.Img variant="top" src={Mail} />
               <div className="icon-block">
@@ -59,7 +59,7 @@ const ContactUs = () => {
               </Card.Body>
             </Card>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 mb-5">
             <Card className="h-100" style={{ width: '95%' }}>
               <Card.Img variant="top" src={Call} />
               <div className="icon-block">
@@ -75,7 +75,7 @@ const ContactUs = () => {
               </Card.Body>
             </Card>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 mb-5">
             <Card className="h-100" style={{ width: '95%' }}>
               <Card.Img variant="top" src={Visit} />
               <div className="icon-block">
@@ -135,11 +135,7 @@ const ContactUs = () => {
                 />
               </Form.Group>
 
-              <Button
-                className="submit-btn"
-                type="submit"
-                value="Send"
-              >
+              <Button className="submit-btn" type="submit" value="Send">
                 Send
               </Button>
             </form>

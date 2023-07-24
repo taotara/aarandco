@@ -12,14 +12,14 @@ const MainNavbar = () => {
 
   return (
     <div className="main-navbar">
-      <Navbar bg="light" expand="lg">
+      <Navbar className="shadow-sm" expand="lg">
         <Container>
           <Navbar.Brand as={Link} to="/">
             <img src={Logo} alt="Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto" id='main'>
+            <Nav className="ms-auto" id="main">
               <Nav.Link as={Link} to="/">
                 Home
               </Nav.Link>
